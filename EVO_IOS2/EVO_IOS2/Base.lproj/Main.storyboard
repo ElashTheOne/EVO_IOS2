@@ -163,6 +163,7 @@
                             <constraint firstItem="G5b-eb-wYq" firstAttribute="leading" secondItem="Nd5-cI-YjC" secondAttribute="leading" id="P7L-6f-vs1"/>
                             <constraint firstItem="Ln7-nR-7LW" firstAttribute="top" secondItem="qFK-O0-rUZ" secondAttribute="bottom" constant="25" id="QFD-aH-ERc"/>
                             <constraint firstItem="G5b-eb-wYq" firstAttribute="top" secondItem="Nd5-cI-YjC" secondAttribute="top" id="UJP-zW-z29"/>
+                            <constraint firstItem="Nd5-cI-YjC" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="1il-sO-RxP" secondAttribute="trailing" symbolic="YES" id="Zfx-3D-7Co"/>
                             <constraint firstItem="1il-sO-RxP" firstAttribute="top" secondItem="Nd5-cI-YjC" secondAttribute="top" constant="170" id="axX-nf-LI5"/>
                             <constraint firstItem="Ln7-nR-7LW" firstAttribute="leading" secondItem="Nd5-cI-YjC" secondAttribute="leading" constant="20" id="fy4-qc-zRi"/>
                             <constraint firstItem="1il-sO-RxP" firstAttribute="leading" secondItem="Nd5-cI-YjC" secondAttribute="leading" constant="10" id="gqF-mz-iUa"/>
@@ -217,11 +218,8 @@
                                 </constraints>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nUB-27-KpL">
-                                <rect key="frame" x="132" y="802" width="150" height="31"/>
+                                <rect key="frame" x="158" y="802" width="98.5" height="31"/>
                                 <color key="backgroundColor" systemColor="systemYellowColor"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="150" id="VnZ-lj-reH"/>
-                                </constraints>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Connection"/>
                                 <connections>
