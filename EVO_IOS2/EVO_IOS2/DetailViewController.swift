@@ -23,14 +23,17 @@ class DetailViewController: UIViewController {
         super.viewDidLoad()
 
         
-        let text = pokemon?.pokedexNumber.description
-        genLabel.text = pokemon?.generation.description
-        nameLabel.text = pokemon?.name
-        pokedexLabel.text = "#: \(text ?? "")"  //pas encore affivé
-        pokedexLabel.text = pokemon?.pokedexNumber.description
-        typeLabel.text = pokemon?.type.rawValue
-        heightLabel.text = pokemon?.height.description
-        imgPokemon.image = UIImage(named: pokemon?.imageName ?? "")
+        guard let pokemon = pokemon else {
+            fatalError("Unable to instantiate pokemon for detail")
+            
+        }
+        
+        genLabel.text = "Gen: " + pokemon.generation.description
+        nameLabel.text = pokemon.name
+        pokedexLabel.text = "#" + pokemon.pokedexNumber.description
+        typeLabel.text = "Types: " + pokemon.type.rawValue
+        heightLabel.text = "Height: " + pokemon.height.description
+        imgPokemon.image = UIImage(named: pokemon.imageName)
          
     }
     
